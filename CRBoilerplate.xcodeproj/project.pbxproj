@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA81B0191614643C00379ABE /* CREnumerationTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = BAEB8C69161443F10041035C /* CREnumerationTypes.h */; };
+		BA81B01A1614643C00379ABE /* NSEnumerator+CREnumeration.h in Headers */ = {isa = PBXBuildFile; fileRef = BAEB8C7B161444140041035C /* NSEnumerator+CREnumeration.h */; };
+		BA81B01B1614643C00379ABE /* NSArray+CREnumeration.h in Headers */ = {isa = PBXBuildFile; fileRef = BAEB8C7E1614441F0041035C /* NSArray+CREnumeration.h */; };
+		BA81B01C1614643C00379ABE /* NSData+CRBoilerplate.h in Headers */ = {isa = PBXBuildFile; fileRef = BAEB8CA316144BB40041035C /* NSData+CRBoilerplate.h */; };
+		BA81B01D1614643C00379ABE /* NSUserDefaults+CRBoilerplate.h in Headers */ = {isa = PBXBuildFile; fileRef = BAEB8CB316144E9D0041035C /* NSUserDefaults+CRBoilerplate.h */; };
+		BA81B01E1614643C00379ABE /* UIViewController+CRBoilerPlate.h in Headers */ = {isa = PBXBuildFile; fileRef = BAEB8C8D161444DB0041035C /* UIViewController+CRBoilerPlate.h */; };
+		BA81B01F1614643C00379ABE /* UILabel+CRBoilerplate.h in Headers */ = {isa = PBXBuildFile; fileRef = BAEB8C9A161448F00041035C /* UILabel+CRBoilerplate.h */; };
+		BA81B0201614643C00379ABE /* UIColor+CRBoilerplate.h in Headers */ = {isa = PBXBuildFile; fileRef = BAEB8C9D161449620041035C /* UIColor+CRBoilerplate.h */; };
+		BA81B0211614643C00379ABE /* UIImage+CRBoilerplate.h in Headers */ = {isa = PBXBuildFile; fileRef = BAEB8CA016144AC70041035C /* UIImage+CRBoilerplate.h */; };
+		BA81B0221614643C00379ABE /* UIApplication+CRBoilerplate.h in Headers */ = {isa = PBXBuildFile; fileRef = BAEB8CA616144D610041035C /* UIApplication+CRBoilerplate.h */; };
+		BA81B0231614643C00379ABE /* CRBoilerplate.h in Headers */ = {isa = PBXBuildFile; fileRef = BAEB8C3D1614437E0041035C /* CRBoilerplate.h */; };
+		BA81B02616146A5300379ABE /* UIScrollView+CRBoilerplate.h in Headers */ = {isa = PBXBuildFile; fileRef = BA81B02416146A5300379ABE /* UIScrollView+CRBoilerplate.h */; };
+		BA81B02716146A5300379ABE /* UIScrollView+CRBoilerplate.m in Sources */ = {isa = PBXBuildFile; fileRef = BA81B02516146A5300379ABE /* UIScrollView+CRBoilerplate.m */; };
 		BAEB8C391614437D0041035C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAEB8C381614437D0041035C /* Foundation.framework */; };
 		BAEB8C3E1614437E0041035C /* CRBoilerplate.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = BAEB8C3D1614437E0041035C /* CRBoilerplate.h */; };
 		BAEB8C481614437E0041035C /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAEB8C471614437E0041035C /* SenTestingKit.framework */; };
@@ -61,6 +74,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		BA81B02416146A5300379ABE /* UIScrollView+CRBoilerplate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+CRBoilerplate.h"; sourceTree = "<group>"; };
+		BA81B02516146A5300379ABE /* UIScrollView+CRBoilerplate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+CRBoilerplate.m"; sourceTree = "<group>"; };
 		BAEB8C351614437D0041035C /* libCRBoilerplate.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCRBoilerplate.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAEB8C381614437D0041035C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BAEB8C3C1614437E0041035C /* CRBoilerplate-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CRBoilerplate-Prefix.pch"; sourceTree = "<group>"; };
@@ -236,6 +251,8 @@
 				BAEB8CA116144AC70041035C /* UIImage+CRBoilerplate.m */,
 				BAEB8CA616144D610041035C /* UIApplication+CRBoilerplate.h */,
 				BAEB8CA716144D620041035C /* UIApplication+CRBoilerplate.m */,
+				BA81B02416146A5300379ABE /* UIScrollView+CRBoilerplate.h */,
+				BA81B02516146A5300379ABE /* UIScrollView+CRBoilerplate.m */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -275,6 +292,28 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		BA81B0171614641500379ABE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA81B0191614643C00379ABE /* CREnumerationTypes.h in Headers */,
+				BA81B01A1614643C00379ABE /* NSEnumerator+CREnumeration.h in Headers */,
+				BA81B01B1614643C00379ABE /* NSArray+CREnumeration.h in Headers */,
+				BA81B01C1614643C00379ABE /* NSData+CRBoilerplate.h in Headers */,
+				BA81B01D1614643C00379ABE /* NSUserDefaults+CRBoilerplate.h in Headers */,
+				BA81B01E1614643C00379ABE /* UIViewController+CRBoilerPlate.h in Headers */,
+				BA81B01F1614643C00379ABE /* UILabel+CRBoilerplate.h in Headers */,
+				BA81B0201614643C00379ABE /* UIColor+CRBoilerplate.h in Headers */,
+				BA81B0211614643C00379ABE /* UIImage+CRBoilerplate.h in Headers */,
+				BA81B0221614643C00379ABE /* UIApplication+CRBoilerplate.h in Headers */,
+				BA81B0231614643C00379ABE /* CRBoilerplate.h in Headers */,
+				BA81B02616146A5300379ABE /* UIScrollView+CRBoilerplate.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		BAEB8C341614437D0041035C /* CRBoilerplate */ = {
 			isa = PBXNativeTarget;
@@ -283,6 +322,7 @@
 				BAEB8C311614437D0041035C /* Sources */,
 				BAEB8C321614437D0041035C /* Frameworks */,
 				BAEB8C331614437D0041035C /* CopyFiles */,
+				BA81B0171614641500379ABE /* Headers */,
 			);
 			buildRules = (
 			);
@@ -386,6 +426,7 @@
 				BAEB8CA516144BB40041035C /* NSData+CRBoilerplate.m in Sources */,
 				BAEB8CA816144D620041035C /* UIApplication+CRBoilerplate.m in Sources */,
 				BAEB8CB516144E9E0041035C /* NSUserDefaults+CRBoilerplate.m in Sources */,
+				BA81B02716146A5300379ABE /* UIScrollView+CRBoilerplate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -544,6 +585,7 @@
 				BAEB8C5C1614437E0041035C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BAEB8C5D1614437E0041035C /* Build configuration list for PBXNativeTarget "CRBoilerplateTests" */ = {
 			isa = XCConfigurationList;
@@ -552,6 +594,7 @@
 				BAEB8C5F1614437E0041035C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
