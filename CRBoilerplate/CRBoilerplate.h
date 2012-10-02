@@ -8,16 +8,16 @@
 #	define CRLog(fmt, ...)
 #endif
 
-#import "Foundation/Enumeration/NSArray+CREnumeration.h"
-#import "Foundation/Enumeration/NSEnumerator+CREnumeration.h"
-#import "Foundation/NSData+CRBoilerplate.h"
-#import "Foundation/NSUserDefaults+CRBoilerplate.h"
+#import <CRBoilerplate/NSArray+CREnumeration.h>
+#import <CRBoilerplate//NSEnumerator+CREnumeration.h>
+#import <CRBoilerplate//NSData+CRBoilerplate.h>
+#import <CRBoilerplate//NSUserDefaults+CRBoilerplate.h>
 
 #if TARGET_OS_IPHONE
-#	import "UIKit/UIApplication+CRBoilerplate.h"
-#	import "UIKit/UIColor+CRBoilerplate.h"
-#	import "UIKit/UIImage+CRBoilerplate.h"
-#	import "UIKit/UILabel+CRBoilerplate.h"
-#	import "UIKit/UIScrollView+CRBoilerplate.h"
-#	import "UIKit/UIViewController+CRBoilerplate.h"
+#	import <CRBoilerplate/UIApplication+CRBoilerplate.h>
+#	import <CRBoilerplate/UIColor+CRBoilerplate.h>
+#	import <CRBoilerplate/UIImage+CRBoilerplate.h>
+#	import <CRBoilerplate/UILabel+CRBoilerplate.h>
+#	import <CRBoilerplate//UIScrollView+CRBoilerplate.h>
+#	import <CRBoilerplate/UIViewController+CRBoilerplate.h>
 #endif

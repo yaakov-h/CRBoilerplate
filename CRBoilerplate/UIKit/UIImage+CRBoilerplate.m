@@ -28,7 +28,10 @@
 	CGContextDrawImage(context,
 					   CGRectMake(0, 0, width, height), self.CGImage);
 	
-	UIImage *grayImage = [UIImage imageWithCGImage:CGBitmapContextCreateImage(context) scale:scale orientation:UIImageOrientationUp];
+    CGImageRef greyCGImage = CGBitmapContextCreateImage(context);
+	UIImage *grayImage = [UIImage imageWithCGImage:greyCGImage scale:scale orientation:UIImageOrientationUp];
+    CFRelease(greyCGImage);
+    
 	CGContextRelease(context);
 	
 	return grayImage;

@@ -2,6 +2,6 @@
 
 @interface NSUserDefaults (CRBoilerplate)
 
-- (void) cr_registerDefaultsFromBundlePlist:(NSString *)plistFileName;
+- (void) cr_registerDefaultsFromBundlePlistWithName:(NSString *)plistFileName;
 
 @end

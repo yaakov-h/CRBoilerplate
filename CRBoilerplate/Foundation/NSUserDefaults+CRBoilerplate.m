@@ -2,7 +2,7 @@
 
 @implementation NSUserDefaults (CRBoilerplate)
 
-- (void) cr_registerDefaultsFromBundlePlist:(NSString *)plistFileName
+- (void) cr_registerDefaultsFromBundlePlistWithName:(NSString *)plistFileName
 {
 	NSString * filePath = [[NSBundle mainBundle] pathForResource:plistFileName ofType:@"plist"];
 	NSDictionary * defaults = [NSDictionary dictionaryWithContentsOfFile:filePath];
