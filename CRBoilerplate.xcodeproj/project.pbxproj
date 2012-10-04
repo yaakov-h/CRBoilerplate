@@ -17,11 +17,9 @@
 		BA81B0201614643C00379ABE /* UIColor+CRBoilerplate.h in Headers */ = {isa = PBXBuildFile; fileRef = BAEB8C9D161449620041035C /* UIColor+CRBoilerplate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BA81B0211614643C00379ABE /* UIImage+CRBoilerplate.h in Headers */ = {isa = PBXBuildFile; fileRef = BAEB8CA016144AC70041035C /* UIImage+CRBoilerplate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BA81B0221614643C00379ABE /* UIApplication+CRBoilerplate.h in Headers */ = {isa = PBXBuildFile; fileRef = BAEB8CA616144D610041035C /* UIApplication+CRBoilerplate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BA81B0231614643C00379ABE /* CRBoilerplate.h in Headers */ = {isa = PBXBuildFile; fileRef = BAEB8C3D1614437E0041035C /* CRBoilerplate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BA81B02616146A5300379ABE /* UIScrollView+CRBoilerplate.h in Headers */ = {isa = PBXBuildFile; fileRef = BA81B02416146A5300379ABE /* UIScrollView+CRBoilerplate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BA81B02716146A5300379ABE /* UIScrollView+CRBoilerplate.m in Sources */ = {isa = PBXBuildFile; fileRef = BA81B02516146A5300379ABE /* UIScrollView+CRBoilerplate.m */; };
 		BAEB8C391614437D0041035C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAEB8C381614437D0041035C /* Foundation.framework */; };
-		BAEB8C3E1614437E0041035C /* CRBoilerplate.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = BAEB8C3D1614437E0041035C /* CRBoilerplate.h */; };
 		BAEB8C481614437E0041035C /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAEB8C471614437E0041035C /* SenTestingKit.framework */; };
 		BAEB8C4A1614437E0041035C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAEB8C491614437E0041035C /* UIKit.framework */; };
 		BAEB8C4B1614437E0041035C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAEB8C381614437D0041035C /* Foundation.framework */; };
@@ -59,6 +57,10 @@
 		D766496B161B1B7F000C679F /* CRSkipEnumerator.h in Headers */ = {isa = PBXBuildFile; fileRef = BAEB8C6E161443F10041035C /* CRSkipEnumerator.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		D766496C161B1B7F000C679F /* CRTakeEnumerator.h in Headers */ = {isa = PBXBuildFile; fileRef = BAEB8C70161443F10041035C /* CRTakeEnumerator.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		D766496D161B1B7F000C679F /* CRTransformingEnumerator.h in Headers */ = {isa = PBXBuildFile; fileRef = BAEB8C72161443F10041035C /* CRTransformingEnumerator.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		D796C397161DA557008B3B96 /* CRLazyObject.h in Headers */ = {isa = PBXBuildFile; fileRef = D796C395161DA557008B3B96 /* CRLazyObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D796C398161DA557008B3B96 /* CRLazyObject.m in Sources */ = {isa = PBXBuildFile; fileRef = D796C396161DA557008B3B96 /* CRLazyObject.m */; };
+		D796C39C161DA817008B3B96 /* CRLazyObjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D796C39B161DA817008B3B96 /* CRLazyObjectTests.m */; };
+		D7ED9E48161DB1C400FA135D /* CRBoilerplate.h in Headers */ = {isa = PBXBuildFile; fileRef = BAEB8C3D1614437E0041035C /* CRBoilerplate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,19 +72,6 @@
 			remoteInfo = CRBoilerplate;
 		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		BAEB8C331614437D0041035C /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "include/${PRODUCT_NAME}";
-			dstSubfolderSpec = 16;
-			files = (
-				BAEB8C3E1614437E0041035C /* CRBoilerplate.h in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		BA81B02416146A5300379ABE /* UIScrollView+CRBoilerplate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+CRBoilerplate.h"; sourceTree = "<group>"; };
@@ -139,6 +128,9 @@
 		D766495F161B155C000C679F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		D7664966161B1839000C679F /* NSMutableDataExtensionsTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSMutableDataExtensionsTest.m; sourceTree = "<group>"; };
 		D766496E161B1C70000C679F /* BuildScript.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = BuildScript.sh; sourceTree = "<group>"; };
+		D796C395161DA557008B3B96 /* CRLazyObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRLazyObject.h; sourceTree = "<group>"; };
+		D796C396161DA557008B3B96 /* CRLazyObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRLazyObject.m; sourceTree = "<group>"; };
+		D796C39B161DA817008B3B96 /* CRLazyObjectTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRLazyObjectTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -287,6 +279,8 @@
 				BAEB8CB416144E9D0041035C /* NSUserDefaults+CRBoilerplate.m */,
 				D766493B161B108D000C679F /* NSMutableData+CRBoilerplate.h */,
 				D766493C161B108D000C679F /* NSMutableData+CRBoilerplate.m */,
+				D796C395161DA557008B3B96 /* CRLazyObject.h */,
+				D796C396161DA557008B3B96 /* CRLazyObject.m */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -310,6 +304,7 @@
 				BAEB8C631614439F0041035C /* Enumeration */,
 				D766495D161B1417000C679F /* NSDataExtensionsTest.m */,
 				D7664966161B1839000C679F /* NSMutableDataExtensionsTest.m */,
+				D796C39B161DA817008B3B96 /* CRLazyObjectTests.m */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -327,11 +322,11 @@
 				BA81B01C1614643C00379ABE /* NSData+CRBoilerplate.h in Headers */,
 				BA81B01D1614643C00379ABE /* NSUserDefaults+CRBoilerplate.h in Headers */,
 				BA81B01E1614643C00379ABE /* UIViewController+CRBoilerPlate.h in Headers */,
+				D796C397161DA557008B3B96 /* CRLazyObject.h in Headers */,
 				BA81B01F1614643C00379ABE /* UILabel+CRBoilerplate.h in Headers */,
 				BA81B0201614643C00379ABE /* UIColor+CRBoilerplate.h in Headers */,
 				BA81B0211614643C00379ABE /* UIImage+CRBoilerplate.h in Headers */,
 				BA81B0221614643C00379ABE /* UIApplication+CRBoilerplate.h in Headers */,
-				BA81B0231614643C00379ABE /* CRBoilerplate.h in Headers */,
 				BA81B02616146A5300379ABE /* UIScrollView+CRBoilerplate.h in Headers */,
 				D766493D161B108D000C679F /* NSMutableData+CRBoilerplate.h in Headers */,
 				D7664968161B1B7F000C679F /* CRChainingEnumerator.h in Headers */,
@@ -340,6 +335,7 @@
 				D766496B161B1B7F000C679F /* CRSkipEnumerator.h in Headers */,
 				D766496C161B1B7F000C679F /* CRTakeEnumerator.h in Headers */,
 				D766496D161B1B7F000C679F /* CRTransformingEnumerator.h in Headers */,
+				D7ED9E48161DB1C400FA135D /* CRBoilerplate.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,7 +348,6 @@
 			buildPhases = (
 				BAEB8C311614437D0041035C /* Sources */,
 				BAEB8C321614437D0041035C /* Frameworks */,
-				BAEB8C331614437D0041035C /* CopyFiles */,
 				BA81B0171614641500379ABE /* Headers */,
 			);
 			buildRules = (
@@ -459,6 +454,7 @@
 				BAEB8CB516144E9E0041035C /* NSUserDefaults+CRBoilerplate.m in Sources */,
 				BA81B02716146A5300379ABE /* UIScrollView+CRBoilerplate.m in Sources */,
 				D766493E161B108D000C679F /* NSMutableData+CRBoilerplate.m in Sources */,
+				D796C398161DA557008B3B96 /* CRLazyObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -474,6 +470,7 @@
 				BAEB8C95161446460041035C /* CRTransformingEnumeratorTests.m in Sources */,
 				D766495E161B1417000C679F /* NSDataExtensionsTest.m in Sources */,
 				D7664967161B1839000C679F /* NSMutableDataExtensionsTest.m in Sources */,
+				D796C39C161DA817008B3B96 /* CRLazyObjectTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
