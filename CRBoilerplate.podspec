@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   s.description  = <<-DESC
 	Code I'd rather not rewrite a thousand times.
                     DESC
-  s.homepage     = "http://EXAMPLE/CRBoilerplate"
+  s.homepage     = "https://github.com/yaakov-h/CRBoilerplate"
 
   s.author       = 'Yaakov'
   s.source       = { :git => "https://github.com/yaakov-h/CRBoilerplate.git", :tag => "0.1.0" }
