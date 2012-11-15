@@ -67,6 +67,7 @@
 		D7EF3A30165517E30090A8F4 /* crc32.h in Headers */ = {isa = PBXBuildFile; fileRef = D7EF3A2C165517DD0090A8F4 /* crc32.h */; };
 		D7EF3A31165517E30090A8F4 /* lookup2.c in Sources */ = {isa = PBXBuildFile; fileRef = D7EF3A2D165517DF0090A8F4 /* lookup2.c */; };
 		D7EF3A32165517E30090A8F4 /* lookup2.h in Headers */ = {isa = PBXBuildFile; fileRef = D7EF3A2E165517E10090A8F4 /* lookup2.h */; };
+		D7EF3A3516551C2A0090A8F4 /* CRDataReaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D7EF3A3416551C2A0090A8F4 /* CRDataReaderTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -143,6 +144,7 @@
 		D7EF3A2C165517DD0090A8F4 /* crc32.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crc32.h; sourceTree = "<group>"; };
 		D7EF3A2D165517DF0090A8F4 /* lookup2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lookup2.c; sourceTree = "<group>"; };
 		D7EF3A2E165517E10090A8F4 /* lookup2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lookup2.h; sourceTree = "<group>"; };
+		D7EF3A3416551C2A0090A8F4 /* CRDataReaderTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRDataReaderTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -323,6 +325,7 @@
 				D766495D161B1417000C679F /* NSDataExtensionsTest.m */,
 				D7664966161B1839000C679F /* NSMutableDataExtensionsTest.m */,
 				D796C39B161DA817008B3B96 /* CRLazyObjectTests.m */,
+				D7EF3A3416551C2A0090A8F4 /* CRDataReaderTests.m */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -495,6 +498,7 @@
 				D766495E161B1417000C679F /* NSDataExtensionsTest.m in Sources */,
 				D7664967161B1839000C679F /* NSMutableDataExtensionsTest.m in Sources */,
 				D796C39C161DA817008B3B96 /* CRLazyObjectTests.m in Sources */,
+				D7EF3A3516551C2A0090A8F4 /* CRDataReaderTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

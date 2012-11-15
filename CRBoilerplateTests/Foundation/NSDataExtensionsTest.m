@@ -55,4 +55,19 @@
     STAssertEqualObjects(expectedObjCData, shaSum, @"SHA-1 has should match precomputed value");
 }
 
+- (void) testCRC32HashValueHashesDataCorrectly
+{
+    uint32_t testHash = [[@"This is a test" dataUsingEncoding:NSUTF8StringEncoding] cr_CRC32Hash];
+    uint32_t expectedHash = 3229261618;
+    
+    STAssertEquals(testHash, expectedHash, @"'This is a test' should have a CRC32 hash of .");
+}
+- (void) testJenkinsHashValueHashesDataCorrectly
+{
+    uint32_t testHash = [[@"This is a test" dataUsingEncoding:NSUTF8StringEncoding] cr_jenkinsHash];
+    uint32_t expectedHash = 620319136;
+    
+    STAssertEquals(testHash, expectedHash, @"'This is a test' should have a Jenkins hash of .");
+}
+
 @end
