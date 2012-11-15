@@ -61,6 +61,12 @@
 		D796C398161DA557008B3B96 /* CRLazyObject.m in Sources */ = {isa = PBXBuildFile; fileRef = D796C396161DA557008B3B96 /* CRLazyObject.m */; };
 		D796C39C161DA817008B3B96 /* CRLazyObjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D796C39B161DA817008B3B96 /* CRLazyObjectTests.m */; };
 		D7ED9E48161DB1C400FA135D /* CRBoilerplate.h in Headers */ = {isa = PBXBuildFile; fileRef = BAEB8C3D1614437E0041035C /* CRBoilerplate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7EF3A20165515C60090A8F4 /* CRDataReader.h in Headers */ = {isa = PBXBuildFile; fileRef = D7EF3A1E165515C60090A8F4 /* CRDataReader.h */; };
+		D7EF3A21165515C60090A8F4 /* CRDataReader.m in Sources */ = {isa = PBXBuildFile; fileRef = D7EF3A1F165515C60090A8F4 /* CRDataReader.m */; };
+		D7EF3A2F165517E30090A8F4 /* crc32.c in Sources */ = {isa = PBXBuildFile; fileRef = D7EF3A2B165517DB0090A8F4 /* crc32.c */; };
+		D7EF3A30165517E30090A8F4 /* crc32.h in Headers */ = {isa = PBXBuildFile; fileRef = D7EF3A2C165517DD0090A8F4 /* crc32.h */; };
+		D7EF3A31165517E30090A8F4 /* lookup2.c in Sources */ = {isa = PBXBuildFile; fileRef = D7EF3A2D165517DF0090A8F4 /* lookup2.c */; };
+		D7EF3A32165517E30090A8F4 /* lookup2.h in Headers */ = {isa = PBXBuildFile; fileRef = D7EF3A2E165517E10090A8F4 /* lookup2.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -131,6 +137,12 @@
 		D796C395161DA557008B3B96 /* CRLazyObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRLazyObject.h; sourceTree = "<group>"; };
 		D796C396161DA557008B3B96 /* CRLazyObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRLazyObject.m; sourceTree = "<group>"; };
 		D796C39B161DA817008B3B96 /* CRLazyObjectTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRLazyObjectTests.m; sourceTree = "<group>"; };
+		D7EF3A1E165515C60090A8F4 /* CRDataReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRDataReader.h; sourceTree = "<group>"; };
+		D7EF3A1F165515C60090A8F4 /* CRDataReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRDataReader.m; sourceTree = "<group>"; };
+		D7EF3A2B165517DB0090A8F4 /* crc32.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = crc32.c; sourceTree = "<group>"; };
+		D7EF3A2C165517DD0090A8F4 /* crc32.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crc32.h; sourceTree = "<group>"; };
+		D7EF3A2D165517DF0090A8F4 /* lookup2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lookup2.c; sourceTree = "<group>"; };
+		D7EF3A2E165517E10090A8F4 /* lookup2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lookup2.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -272,6 +284,10 @@
 		BAEB8C621614438D0041035C /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				D7EF3A2B165517DB0090A8F4 /* crc32.c */,
+				D7EF3A2C165517DD0090A8F4 /* crc32.h */,
+				D7EF3A2D165517DF0090A8F4 /* lookup2.c */,
+				D7EF3A2E165517E10090A8F4 /* lookup2.h */,
 				BAEB8C60161443830041035C /* Enumeration */,
 				BAEB8CA316144BB40041035C /* NSData+CRBoilerplate.h */,
 				BAEB8CA416144BB40041035C /* NSData+CRBoilerplate.m */,
@@ -281,6 +297,8 @@
 				D766493C161B108D000C679F /* NSMutableData+CRBoilerplate.m */,
 				D796C395161DA557008B3B96 /* CRLazyObject.h */,
 				D796C396161DA557008B3B96 /* CRLazyObject.m */,
+				D7EF3A1E165515C60090A8F4 /* CRDataReader.h */,
+				D7EF3A1F165515C60090A8F4 /* CRDataReader.m */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -336,6 +354,9 @@
 				D766496C161B1B7F000C679F /* CRTakeEnumerator.h in Headers */,
 				D766496D161B1B7F000C679F /* CRTransformingEnumerator.h in Headers */,
 				D7ED9E48161DB1C400FA135D /* CRBoilerplate.h in Headers */,
+				D7EF3A20165515C60090A8F4 /* CRDataReader.h in Headers */,
+				D7EF3A30165517E30090A8F4 /* crc32.h in Headers */,
+				D7EF3A32165517E30090A8F4 /* lookup2.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -455,6 +476,9 @@
 				BA81B02716146A5300379ABE /* UIScrollView+CRBoilerplate.m in Sources */,
 				D766493E161B108D000C679F /* NSMutableData+CRBoilerplate.m in Sources */,
 				D796C398161DA557008B3B96 /* CRLazyObject.m in Sources */,
+				D7EF3A21165515C60090A8F4 /* CRDataReader.m in Sources */,
+				D7EF3A2F165517E30090A8F4 /* crc32.c in Sources */,
+				D7EF3A31165517E30090A8F4 /* lookup2.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

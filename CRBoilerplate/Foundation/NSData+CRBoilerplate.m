@@ -1,5 +1,12 @@
+//
+// This file is subject to the software licence as defined in
+// the file 'LICENCE.txt' included in this source code package.
+//
+
 #import "NSData+CRBoilerplate.h"
 #import <CommonCrypto/CommonCrypto.h>
+#import "lookup2.h"
+#import "crc32.h"
 
 @implementation NSData (CRBoilerplate)
 
@@ -47,6 +54,16 @@
     }
     
     return [mutableData copy];
+}
+
+- (uint32_t) cr_jenkinsHash {
+	return hash((unsigned char *)[self bytes], [self length], 0);
+}
+
+- (uint32_t) cr_CRC32Hash {
+	crc_t crc = crc_init();
+	crc = crc_update(crc, (const unsigned char *)[self bytes], [self length]);
+	return crc_finalize(crc);
 }
 
 @end

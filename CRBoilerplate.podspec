@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
 
   s.platform     = :ios, '6.0'
   s.source_files = 'Classes', 'CRBoilerplate/**/*.{h,m}'
-  s.public_header_files = 'CRBoilerplate/**/*.h'
+  s.public_header_files = 'CRBoilerplate/**/{CR,UI,NS}*.h'
   s.framework  = 'Foundation', 'UIKit', 'CoreGraphics'
   s.requires_arc = true
 end

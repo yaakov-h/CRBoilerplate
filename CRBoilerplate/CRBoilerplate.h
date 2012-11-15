@@ -1,3 +1,8 @@
+//
+// This file is subject to the software licence as defined in
+// the file 'LICENCE.txt' included in this source code package.
+//
+
 #import <Foundation/Foundation.h>
 
 // Logs a message, but also tells you where it was logged from.
@@ -8,6 +13,7 @@
 #	define CRLog(fmt, ...)
 #endif
 
+#import <CRBoilerplate/CRDataReader.h>
 #import <CRBoilerplate/CRLazyObject.h>
 #import <CRBoilerplate/NSArray+CREnumeration.h>
 #import <CRBoilerplate/NSEnumerator+CREnumeration.h>
