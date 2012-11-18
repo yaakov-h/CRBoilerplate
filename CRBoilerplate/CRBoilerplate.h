@@ -18,6 +18,7 @@
 #import <CRBoilerplate/NSArray+CREnumeration.h>
 #import <CRBoilerplate/NSEnumerator+CREnumeration.h>
 #import <CRBoilerplate/NSData+CRBoilerplate.h>
+#import <CRBoilerplate/NSMutableData+CRBoilerplate.h>
 #import <CRBoilerplate/NSUserDefaults+CRBoilerplate.h>
 
 #if TARGET_OS_IPHONE
