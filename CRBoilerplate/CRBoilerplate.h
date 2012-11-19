@@ -14,7 +14,9 @@
 #endif
 
 #import <CRBoilerplate/CRDataReader.h>
+#import <CRBoilerplate/CRDeferred.h>
 #import <CRBoilerplate/CRLazyObject.h>
+#import <CRBoilerplate/CRPromise.h>
 #import <CRBoilerplate/NSArray+CREnumeration.h>
 #import <CRBoilerplate/NSEnumerator+CREnumeration.h>
 #import <CRBoilerplate/NSData+CRBoilerplate.h>

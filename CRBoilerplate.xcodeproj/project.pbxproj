@@ -46,6 +46,11 @@
 		BAEB8CA516144BB40041035C /* NSData+CRBoilerplate.m in Sources */ = {isa = PBXBuildFile; fileRef = BAEB8CA416144BB40041035C /* NSData+CRBoilerplate.m */; };
 		BAEB8CA816144D620041035C /* UIApplication+CRBoilerplate.m in Sources */ = {isa = PBXBuildFile; fileRef = BAEB8CA716144D620041035C /* UIApplication+CRBoilerplate.m */; };
 		BAEB8CB516144E9E0041035C /* NSUserDefaults+CRBoilerplate.m in Sources */ = {isa = PBXBuildFile; fileRef = BAEB8CB416144E9D0041035C /* NSUserDefaults+CRBoilerplate.m */; };
+		D75CEA731659BC450047BE0F /* CRDeferred.h in Headers */ = {isa = PBXBuildFile; fileRef = D75CEA711659BC450047BE0F /* CRDeferred.h */; };
+		D75CEA741659BC450047BE0F /* CRDeferred.m in Sources */ = {isa = PBXBuildFile; fileRef = D75CEA721659BC450047BE0F /* CRDeferred.m */; };
+		D75CEA781659BC600047BE0F /* CRPromise.h in Headers */ = {isa = PBXBuildFile; fileRef = D75CEA761659BC600047BE0F /* CRPromise.h */; };
+		D75CEA791659BC600047BE0F /* CRPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = D75CEA771659BC600047BE0F /* CRPromise.m */; };
+		D75CEA801659BD780047BE0F /* CRDeferredTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D75CEA7F1659BD780047BE0F /* CRDeferredTests.m */; };
 		D766493D161B108D000C679F /* NSMutableData+CRBoilerplate.h in Headers */ = {isa = PBXBuildFile; fileRef = D766493B161B108D000C679F /* NSMutableData+CRBoilerplate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D766493E161B108D000C679F /* NSMutableData+CRBoilerplate.m in Sources */ = {isa = PBXBuildFile; fileRef = D766493C161B108D000C679F /* NSMutableData+CRBoilerplate.m */; };
 		D766495E161B1417000C679F /* NSDataExtensionsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D766495D161B1417000C679F /* NSDataExtensionsTest.m */; };
@@ -129,6 +134,11 @@
 		BAEB8CA716144D620041035C /* UIApplication+CRBoilerplate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+CRBoilerplate.m"; sourceTree = "<group>"; };
 		BAEB8CB316144E9D0041035C /* NSUserDefaults+CRBoilerplate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+CRBoilerplate.h"; sourceTree = "<group>"; };
 		BAEB8CB416144E9D0041035C /* NSUserDefaults+CRBoilerplate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+CRBoilerplate.m"; sourceTree = "<group>"; };
+		D75CEA711659BC450047BE0F /* CRDeferred.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRDeferred.h; sourceTree = "<group>"; };
+		D75CEA721659BC450047BE0F /* CRDeferred.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRDeferred.m; sourceTree = "<group>"; };
+		D75CEA761659BC600047BE0F /* CRPromise.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRPromise.h; sourceTree = "<group>"; };
+		D75CEA771659BC600047BE0F /* CRPromise.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRPromise.m; sourceTree = "<group>"; };
+		D75CEA7F1659BD780047BE0F /* CRDeferredTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRDeferredTests.m; sourceTree = "<group>"; };
 		D766493B161B108D000C679F /* NSMutableData+CRBoilerplate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableData+CRBoilerplate.h"; sourceTree = "<group>"; };
 		D766493C161B108D000C679F /* NSMutableData+CRBoilerplate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableData+CRBoilerplate.m"; sourceTree = "<group>"; };
 		D766495D161B1417000C679F /* NSDataExtensionsTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDataExtensionsTest.m; sourceTree = "<group>"; };
@@ -301,6 +311,10 @@
 				D796C396161DA557008B3B96 /* CRLazyObject.m */,
 				D7EF3A1E165515C60090A8F4 /* CRDataReader.h */,
 				D7EF3A1F165515C60090A8F4 /* CRDataReader.m */,
+				D75CEA711659BC450047BE0F /* CRDeferred.h */,
+				D75CEA721659BC450047BE0F /* CRDeferred.m */,
+				D75CEA761659BC600047BE0F /* CRPromise.h */,
+				D75CEA771659BC600047BE0F /* CRPromise.m */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -326,6 +340,7 @@
 				D7664966161B1839000C679F /* NSMutableDataExtensionsTest.m */,
 				D796C39B161DA817008B3B96 /* CRLazyObjectTests.m */,
 				D7EF3A3416551C2A0090A8F4 /* CRDataReaderTests.m */,
+				D75CEA7F1659BD780047BE0F /* CRDeferredTests.m */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -360,6 +375,8 @@
 				D7EF3A20165515C60090A8F4 /* CRDataReader.h in Headers */,
 				D7EF3A30165517E30090A8F4 /* crc32.h in Headers */,
 				D7EF3A32165517E30090A8F4 /* lookup2.h in Headers */,
+				D75CEA731659BC450047BE0F /* CRDeferred.h in Headers */,
+				D75CEA781659BC600047BE0F /* CRPromise.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,6 +499,8 @@
 				D7EF3A21165515C60090A8F4 /* CRDataReader.m in Sources */,
 				D7EF3A2F165517E30090A8F4 /* crc32.c in Sources */,
 				D7EF3A31165517E30090A8F4 /* lookup2.c in Sources */,
+				D75CEA741659BC450047BE0F /* CRDeferred.m in Sources */,
+				D75CEA791659BC600047BE0F /* CRPromise.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -499,6 +518,7 @@
 				D7664967161B1839000C679F /* NSMutableDataExtensionsTest.m in Sources */,
 				D796C39C161DA817008B3B96 /* CRLazyObjectTests.m in Sources */,
 				D7EF3A3516551C2A0090A8F4 /* CRDataReaderTests.m in Sources */,
+				D75CEA801659BD780047BE0F /* CRDeferredTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
