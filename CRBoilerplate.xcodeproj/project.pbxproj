@@ -145,6 +145,7 @@
 		D766495F161B155C000C679F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		D7664966161B1839000C679F /* NSMutableDataExtensionsTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSMutableDataExtensionsTest.m; sourceTree = "<group>"; };
 		D766496E161B1C70000C679F /* BuildScript.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = BuildScript.sh; sourceTree = "<group>"; };
+		D7959076166A4FFC00334646 /* CRBoilerplate.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CRBoilerplate.podspec; sourceTree = "<group>"; };
 		D796C395161DA557008B3B96 /* CRLazyObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRLazyObject.h; sourceTree = "<group>"; };
 		D796C396161DA557008B3B96 /* CRLazyObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRLazyObject.m; sourceTree = "<group>"; };
 		D796C39B161DA817008B3B96 /* CRLazyObjectTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRLazyObjectTests.m; sourceTree = "<group>"; };
@@ -184,6 +185,7 @@
 		BAEB8C2A1614437D0041035C = {
 			isa = PBXGroup;
 			children = (
+				D7959076166A4FFC00334646 /* CRBoilerplate.podspec */,
 				D766496E161B1C70000C679F /* BuildScript.sh */,
 				BAEB8C3A1614437E0041035C /* CRBoilerplate */,
 				BAEB8C4F1614437E0041035C /* CRBoilerplate Unit Tests */,

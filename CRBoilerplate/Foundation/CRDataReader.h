@@ -25,6 +25,7 @@
 - (uint64_t) readUInt64;
 - (int64_t) readInt64;
 - (NSData *) readDataOfLength:(NSUInteger)length;
+- (NSString *) readUTF8String;
 
 - (NSData *) remainingData;
 

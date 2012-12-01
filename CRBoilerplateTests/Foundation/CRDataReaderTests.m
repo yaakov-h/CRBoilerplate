@@ -134,4 +134,17 @@
     STAssertEquals([[testReader remainingData] length], 0U, @"Should still have no data");
 }
 
+- (void) testReadUTF8String
+{
+	NSString * testString = @"This is a test string\0";
+	NSData * strData = [testString dataUsingEncoding:NSUTF8StringEncoding];
+	
+	CRDataReader * testReader = [[CRDataReader alloc] initWithData:strData];
+	
+	NSString * string = [testReader readUTF8String];
+	
+	STAssertEqualObjects(string, @"This is a test string", @"Read string should match original string");
+	STAssertEquals(testReader.position, testReader.data.length, @"Should be at end of data");
+}
+
 @end

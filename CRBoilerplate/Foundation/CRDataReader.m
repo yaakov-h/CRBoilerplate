@@ -4,6 +4,7 @@
 //
 
 #import "CRDataReader.h"
+#import "NSMutableData+CRBoilerplate.h"
 
 @implementation CRDataReader
 
@@ -97,6 +98,22 @@
 	_position = curPosition;
 	
 	return remainingData;
+}
+
+- (NSString *) readUTF8String
+{
+	NSMutableData * stringData = [[NSMutableData alloc] init];
+	uint8_t nextByte;
+	do
+	{
+		nextByte  = [self readUInt8];
+		if (nextByte != 0)
+		{
+			[stringData cr_appendUInt8:nextByte];
+		}
+	} while (nextByte != 0);
+	
+	return [[NSString alloc] initWithData:stringData encoding:NSUTF8StringEncoding];
 }
 
 
